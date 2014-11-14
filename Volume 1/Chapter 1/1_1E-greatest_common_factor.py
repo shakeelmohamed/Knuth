@@ -23,4 +23,4 @@ def gcf_min(m, n):
     if m < n:
         m, n = n, m
 
-    return n if (m % n == 0) else gcf_min(n, r)
+    return n if (m % n == 0) else gcf_min(n, m % n)
